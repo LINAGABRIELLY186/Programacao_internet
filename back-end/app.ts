@@ -2,6 +2,7 @@ import express, { NextFunction, Request, Response } from 'express';
 import { RepositorioDePostagens } from './RepositorioDePostagem';
 import { Postagem } from './Postagem';
 import cors from 'cors';
+import path from 'path';
 
 const app = express();
 const repositorio = new RepositorioDePostagens();
@@ -9,6 +10,11 @@ const repositorio = new RepositorioDePostagens();
 app.get('/', (req: Request, res: Response) => {
     res.send('<h1>Bem-vinda ao Social IFPI, Lina! 🚀</h1><p>Use a rota /socialifpi/postagem para interagir com as postagens.</p>');
 });
+
+
+
+// Servir arquivos estáticos da pasta 'static'
+app.use(express.static(path.join(__dirname, '../static')));
 
 // Configurações do Express
 app.use(express.json());
