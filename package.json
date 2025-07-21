@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tsc",
+   "build": "tsc && xcopy static dist\\static /E /I /Y"
     "start": "npm run build && node dist/app.js"
   },
   "dependencies": {
