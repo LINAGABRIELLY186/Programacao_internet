@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
-
+    
     /* Projects */
     // "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
     // "composite": true,                                /* Enable constraints that allow a TypeScript project to be used with project references. */
@@ -23,6 +23,8 @@
     // "noLib": true,                                    /* Disable including any library files, including the default lib.d.ts. */
     // "useDefineForClassFields": true,                  /* Emit ECMAScript-standard-compliant class fields. */
     // "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
+    "outDir": "dist",
+    "rootDir": "back-end",
 
     /* Modules */
     "module": "commonjs",                                /* Specify what module code is generated. */
