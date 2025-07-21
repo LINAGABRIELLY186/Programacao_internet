@@ -2,7 +2,7 @@ function getById(id: string): HTMLElement | null {
     return document.getElementById(id);
 }
 
-const apiUrl = process.env.API_URL || 'http://localhost:3000/socialifpi/postagem';
+const apiUrl = process.env.API_URL || 'https://programacao-internet.onrender.com';
 
 interface Comentario {
     autor: string;
