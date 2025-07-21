@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "dist/app.js",
   "scripts": {
-    "build": "tsc && xcopy static dist\\static /E /I /Y",
+    "build": "tsc && cp -r static dist/static",
     "start": "npm run build && node dist/app.js"
   },
   "dependencies": {
