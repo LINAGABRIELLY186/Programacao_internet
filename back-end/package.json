@@ -1,7 +1,10 @@
 {
+  "name": "programacao-internet",
+  "version": "1.0.0",
+  "main": "dist/app.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/app.js"
+    "build": "tsc && xcopy static dist\\static /E /I /Y",
+    "start": "npm run build && node dist/app.js"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -14,4 +17,3 @@
     "typescript": "^5.4.5"
   }
 }
-
