@@ -6,6 +6,10 @@ import cors from 'cors';
 const app = express();
 const repositorio = new RepositorioDePostagens();
 
+app.get('/', (req: Request, res: Response) => {
+    res.send('<h1>Bem-vinda ao Social IFPI, Lina! 🚀</h1><p>Use a rota /socialifpi/postagem para interagir com as postagens.</p>');
+});
+
 // Configurações do Express
 app.use(express.json());
 
