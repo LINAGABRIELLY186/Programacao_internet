@@ -1,4 +1,37 @@
 "use strict";
+import express from 'express';
+import cors from 'cors';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// CORS
+app.use(cors());
+
+// Para trabalhar com diretórios em ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Servir arquivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Outras rotas aqui...
+// Exemplo:
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Olá Render!' });
+});
+
+// Fallback para SPA (se precisar)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
+
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
