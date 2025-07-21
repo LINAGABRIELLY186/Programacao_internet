@@ -8,9 +8,8 @@ const app = express();
 const repositorio = new RepositorioDePostagens();
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('<h1>Bem-vinda ao Social IFPI, Lina! 🚀</h1><p>Use a rota /socialifpi/postagem para interagir com as postagens.</p>');
+    res.sendFile(path.join(__dirname, '../static/index.html'));
 });
-
 
 
 // Servir arquivos estáticos da pasta 'static'
