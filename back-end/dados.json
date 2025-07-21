@@ -1,0 +1,68 @@
+{
+  "postagens": [
+    {
+      "id": 1,
+      "titulo": "A Importância da Educação",
+      "conteudo": "A educação é a base para uma sociedade mais justa e equitativa. Ela promove o desenvolvimento individual e coletivo, permitindo que pessoas realizem seu potencial. Investir em educação é investir no futuro de todos nós.",
+      "data": "2023-06-22T03:00:00.000Z",
+      "curtidas": 10,
+      "comentarios": [
+        {
+          "autor": "meir",
+          "texto": "concordo plenamente!",
+          "data": "2025-07-21T00:55:08.089Z"
+        }
+      ],
+      "reacoes": {
+        "Choro": 1,
+        "Raiva": 1,
+        "Surpresa": 1,
+        "Risos": 2
+      },
+      "denuncias": [
+        {
+          "autor": "joana",
+          "texto": "mané estudar",
+          "data": "2025-07-21T00:55:30.074Z"
+        },
+        {
+          "autor": "maraia",
+          "texto": "conteudo improprio",
+          "data": "2025-07-21T02:16:15.749Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "noite bela",
+      "conteudo": "boa noite! que amanhã tenhamos um ótimo dia.",
+      "data": "2025-07-21T01:17:11.589Z",
+      "curtidas": 0,
+      "comentarios": [],
+      "reacoes": {
+        "Risos": 0,
+        "Surpresa": 0,
+        "Raiva": 0,
+        "Choro": 0
+      },
+      "denuncias": [
+        {
+          "autor": "maria",
+          "texto": "não gostei do conteúdo",
+          "data": "2025-07-21T03:04:00.822Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "A Importância da Educação",
+      "conteudo": "A educação é a base para uma sociedade mais justa e equitativa. Ela promove o desenvolvimento individual e coletivo, permitindo que pessoas realizem seu potencial. Investir em educação é investir no futuro de todos nós.",
+      "data": "2023-08-02T03:00:00.000Z",
+      "curtidas": 10,
+      "comentarios": [],
+      "reacoes": {},
+      "denuncias": []
+    }
+  ],
+  "nextId": 4
+}
