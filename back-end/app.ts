@@ -8,12 +8,12 @@ const app = express();
 const repositorio = new RepositorioDePostagens();
 
 app.get('/', (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, '../static/index.html'));
+    res.sendFile(path.join(__dirname, 'static/index.html'));
 });
 
 
 // Servir arquivos estáticos da pasta 'static'
-app.use(express.static(path.join(__dirname, '../static')));
+app.use(express.static(path.join(__dirname, 'static')));
 
 // Configurações do Express
 app.use(express.json());
